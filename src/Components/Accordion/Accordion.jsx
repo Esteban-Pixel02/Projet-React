@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Accordion/Accordion.scss';  
+import './Accordion.scss';  
 
 const Accordion = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false); // Gérer l'état ouvert/fermé
