@@ -1,0 +1,144 @@
+@import "../../assets/Style/variables";
+
+.house-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-left: 336px; 
+  transition: padding-left 0.3s ease-in-out;
+}
+
+.house-title {
+  color: $primary-color;
+  font-size: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%; 
+  position: relative;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.house-location {
+  margin-top: 5px;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.house-host {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+
+.host-name {
+  font-size: 16px;
+  color: $primary-color;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.host-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .house-details {
+    padding-left: 20px; 
+  }
+
+  .house-title {
+    font-size: 32px;
+    white-space: normal;
+    overflow: visible;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .house-location {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .house-host {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .host-name {
+    font-size: 14px;
+  }
+
+  .host-picture {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .house-details {
+    padding-left: 20px;
+  }
+
+  .house-title {
+    font-size: 28px;
+    white-space: normal;
+    overflow: visible;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .house-location {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .house-host {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .host-name {
+    font-size: 14px;
+  }
+
+  .host-picture {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .house-title {
+    font-size: 24px;
+  }
+
+  .house-location {
+    font-size: 12px;
+  }
+
+  .host-name {
+    font-size: 12px;
+  }
+
+  .host-picture {
+    width: 25px;
+    height: 25px;
+  }
+}

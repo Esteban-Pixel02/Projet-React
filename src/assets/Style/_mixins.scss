@@ -1,0 +1,13 @@
+
+// Mixin pour centrer un élément en Flexbox
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Mixin pour appliquer une ombre portée
+  @mixin box-shadow($color: rgba(0, 0, 0, 0.5), $x: 0px, $y: 4px, $blur: 6px) {
+    box-shadow: $x $y $blur $color;
+  }
+  

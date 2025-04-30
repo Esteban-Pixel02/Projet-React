@@ -1,0 +1,78 @@
+@import '../../assets/Style/variables.scss';
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.error-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+  margin-top: -110px;
+}
+
+.error-code {
+  font-size: 263px;
+  font-weight: bold;
+  color: $primary-color;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  font-size: 30px;
+  color: $primary-color;
+}
+
+.error-link {
+  font-size: 18px;
+  color: #333;
+  text-decoration: underline;
+  margin-top: 150px;
+}
+
+.error-link:hover {
+  text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .error-code {
+    font-size: 150px; 
+  }
+
+  .error-message {
+    font-size: 24px; 
+  }
+
+  .error-link {
+    font-size: 16px;
+    margin-top: 50px; 
+  }
+  .error-content{
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .error-code {
+    font-size: 100px; 
+  }
+
+  .error-message {
+    font-size: 20px; 
+  }
+
+  .error-link {
+    font-size: 14px;
+    margin-top: 30px; 
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../assets/Style/variables";
+
+.house-tags-rating {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 83%;
+}
+
+.house-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-left: 19px;
+}
+
+.tag {
+    background-color: $primary-color;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.house-rating {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    font-size: 25px;
+    color: $primary-color; 
+    gap: 8px;
+    margin-bottom: 13px;
+    padding-left: 19px;
+}
+
+.house-rating .fa-star {
+    margin-left: 5px;
+    color: $primary-color;
+    font-size: 20px;
+}
