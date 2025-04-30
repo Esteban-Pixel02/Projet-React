@@ -1,4 +1,4 @@
-@import '../../assets/Style/variables.scss';
+@use '../../assets/Style/variables' as *;
 
 .error-page {
   display: flex;

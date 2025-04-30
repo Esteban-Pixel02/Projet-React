@@ -1,5 +1,5 @@
-@import '../../assets/Style/variables'; 
-@import '../../assets/Style/mixins';
+@use '../../assets/Style/variables' as *;
+@use '../../assets/Style/mixins' as *;
 
 .banner {
   position: relative;
