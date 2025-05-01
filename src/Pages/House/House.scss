@@ -146,8 +146,8 @@ body {
 /* Entre 769px et 1200px */
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .house-details-container {
-    margin-left: 9px;
-    margin-right: 9px;
+    margin-left: 12px;
+    margin-right: 15px;
     gap: 20px;
   }
 
@@ -165,11 +165,13 @@ body {
   .accordion-container {
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 10px 0 22px;
   }
 }
 
 /* Jusqu'à 768px */
 @media screen and (max-width: 768px) {
+ 
   .house-details {
     padding-left: 20px;
   }
@@ -227,12 +229,18 @@ body {
     justify-content: space-between;
     gap: 10px;
     width: 100%;
-    padding: 0;
+    padding: 0 10px 0 8px;
   }
 
   .host-info {
+    position: relative;
     align-items: center;
     padding-top: 2px;
+    top: 15px;
+  }
+
+  .accordion-container{
+    padding: 0 10px 0 22px;
   }
 }
 

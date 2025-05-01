@@ -11,3 +11,29 @@ body {
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .banner-top{
+    padding: 0 10px 0 22px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .banner-top{
+    padding: 0 10px 0 22px;
+  }
+
+  
+}
+
+
+@media screen and (max-width: 480px) {
+  .banner-top{
+    padding: 0 10px 0 22px;
+  }
+
+  
+    
+  }
+

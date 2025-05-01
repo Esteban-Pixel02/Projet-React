@@ -17,8 +17,9 @@ const Accueil = () => {
       
       <Header /> 
 
-      
+    <div className='banner-top'>
       <Banner image={bannerImage} text="Chez vous, partout et ailleurs" />
+    </div>
 
       
       <div className="cards-container">

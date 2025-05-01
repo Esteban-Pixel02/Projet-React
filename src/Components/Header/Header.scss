@@ -15,6 +15,7 @@
   margin-top: 50px;
   position: relative;
   left: 290px;
+  padding-left: 12px;
 }
 
 .nav-buttons {
@@ -23,6 +24,7 @@
   position: relative;
   right: 295px;
   margin-top: 50px;
+  padding-right: 10px;
 }
 
 .nav-buttons a {
@@ -60,3 +62,26 @@
     padding: 15px 20px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .logo{
+    padding-left: 8px;
+  }
+
+  .nav-buttons{
+    padding-right: 4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.logo{
+  padding-left: 8px;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+  .arrow {
+    font-size: 32px;
+  }
+}
+

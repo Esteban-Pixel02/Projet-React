@@ -56,6 +56,7 @@
     overflow: visible;
   }
 
+
   .banner-text {
     font-size: 22px;
     width: 100%; 
@@ -73,6 +74,7 @@
     min-height: 150px;
     margin: 15px auto;
     border-radius: 10px;
+    
   }
 
   .banner-text {
@@ -80,5 +82,6 @@
     padding: 0 10px;
     line-height: 1.2;
     visibility: visible !important; /* Toujours visible même sur petits écrans */
+    
   }
 }

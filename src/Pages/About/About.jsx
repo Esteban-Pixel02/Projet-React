@@ -11,8 +11,9 @@ function Propos() {
   return (
     <div className="propos-container">
       <Header />
-      
+      <div className='banner-top-about'>
       <Banner image={AboutBannerImage} text="" className="no-overlay" />
+      </div>
       
       <div className="main-content">
         
