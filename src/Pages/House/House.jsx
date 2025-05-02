@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLogements } from '../../hooks/useLogements';
+import { useLogements } from '../../Hooks/useLogements';
 import { useParams } from 'react-router-dom';
 import '../House/House.scss';
 import Header from '../../Components/Header/Header';
