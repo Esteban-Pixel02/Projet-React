@@ -10,6 +10,9 @@ import HouseDetails from '../../Components/HouseDetails/HouseDetails';
 import Error from '../Error/Error';
 import HouseTagsRating from '../../Components/HouseTagsRating/HouseTagsRating';
 
+import redStar from '../../assets/Logo/Vector-red.svg';
+import greyStar from '../../assets/Logo/Vector-grey.svg';
+
 function House() {
   const { id } = useParams();
   const { logements } = useLogements(); 
@@ -35,11 +38,15 @@ function House() {
           <HouseTagsRating tags={logement.tags} />
         </div>
 
-        
         <div className="house-right">
           <div className="house-rating">
             {Array.from({ length: 5 }, (_, i) => (
-              <span key={i} style={{ color: i < logement.rating ? "#FF6060" : "#E3E3E3" }}>★</span>
+              <img
+                key={i}
+                src={i < logement.rating ? redStar : greyStar}
+                alt={i < logement.rating ? "Étoile rouge" : "Étoile grise"}
+                className="rating-star"
+              />
             ))}
           </div>
           <div className="host-info">
