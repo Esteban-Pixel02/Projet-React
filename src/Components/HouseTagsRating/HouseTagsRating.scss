@@ -25,19 +25,4 @@
     border-radius: 10px;
 }
 
-.house-rating {
-    display: flex;
-    align-items: center;
-    padding-right: 13px;
-    font-size: 25px;
-    color: $primary-color; 
-    gap: 8px;
-    margin-bottom: 13px;
-    padding-left: 19px;
-}
 
-.house-rating .fa-star {
-    margin-left: 5px;
-    color: $primary-color;
-    font-size: 20px;
-}

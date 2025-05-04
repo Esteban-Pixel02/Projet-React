@@ -15,10 +15,15 @@ import greyStar from '../../assets/Logo/Vector-grey.svg';
 
 function House() {
   const { id } = useParams();
-  const { logements } = useLogements(); 
+  const { logements , isLoading } = useLogements(); 
+  console.log(isLoading);
+  
+  if (isLoading) {
+    return <div className="loading">Loading...</div>;
+  }
 
   const logement = logements.find(item => item.id === id);
-
+  
   if (!logement) {
     return <Error />;
   }
@@ -50,11 +55,11 @@ function House() {
             ))}
           </div>
           <div className="host-info">
-            <div className="host-name">
-              {logement.host.name.split(' ').map((part, index) => (
-                <span key={index}>{part}</span>
-              ))}
-            </div>
+          <div className="host-name">
+            {logement.host.name.split(' ').map((part, index) => (
+             <span key={index} className={index === 1 ? "last-name" : ""}>{part}</span>
+          ))}
+          </div>
             <img src={logement.host.picture} alt={logement.host.name} className="host-picture" />
           </div>
         </div>

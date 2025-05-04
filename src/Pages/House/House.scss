@@ -108,7 +108,10 @@ body {
   align-items: center;
   gap: 8px;
   margin-top: 0;
+  margin-bottom: 13px;
+  padding-left: 19px;
 }
+
 
 .rating-star {
   width: 20px;
@@ -132,6 +135,10 @@ body {
   display: flex;
   flex-direction: column;
   text-align: right;
+}
+
+.last-name {
+  margin-left: 5px; // ajuste selon le décalage souhaité
 }
 
 .host-picture {
@@ -204,9 +211,16 @@ body {
   }
 
   .host-name {
+    position: relative;
     font-size: 14px;
     text-align: left;
+    left: 10px;
   }
+
+  .last-name {
+    margin-left: 5px; 
+  }
+  
 
   .host-picture {
     width: 30px;
@@ -243,6 +257,22 @@ body {
     align-items: center;
     padding-top: 2px;
     top: 15px;
+  }
+
+  .accordion-container {
+    position: relative;
+    width: 100%;
+    max-width: 732px;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 0 0 15px;
+    left: 3px;
+    padding-right: 10px;
+  }
+  
+  .accordion {
+    width: 100%;
+    max-width: 732px;
   }
 }
 
