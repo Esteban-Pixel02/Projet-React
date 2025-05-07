@@ -1,5 +1,6 @@
 export async function getLogements() {
-  const response = await fetch(`${import.meta.env.BASE_URL}annonces.json`);
+  const apiUrl = import.meta.env.VITE_API_URL || "/Projet-React/annonces.json";
+  const response = await fetch(apiUrl);
   if (!response.ok) {
     throw new Error('Erreur lors du chargement des logements');
   }

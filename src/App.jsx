@@ -8,7 +8,7 @@ import './assets/Style/App.scss';
 
 function App() {
   return (
-    <Router basename="/Projet-React">  {/* Ajout du basename */}
+    <Router basename="/Projet-React">  
       <Routes>
         <Route index element={<Accueil />} />
         <Route path="/propos" element={<Propos />} />

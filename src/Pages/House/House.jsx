@@ -16,7 +16,7 @@ import greyStar from '../../assets/Logo/Vector-grey.svg';
 function House() {
   const { id } = useParams();
   const { logements , isLoading } = useLogements(); 
-  console.log(isLoading);
+  
   
   if (isLoading) {
     return <div className="loading">Loading...</div>;

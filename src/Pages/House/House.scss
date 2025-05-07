@@ -25,6 +25,13 @@ body {
   padding: 0 10px 0 10px;
 }
 
+.accordion .accordion-content {
+  width: 100%; // s'étend à la taille de .accordion
+  height: 174px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 .accordion {
   flex: 1 1 45%;
   width: 40%;

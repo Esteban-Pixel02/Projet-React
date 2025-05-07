@@ -20,7 +20,7 @@ const Accordion = ({ title, content }) => {
       </button>
       {isOpen && (
         <div className="accordion-content">
-          <p>{content}</p>
+          <div>{content}</div>
         </div>
       )}
     </div>
